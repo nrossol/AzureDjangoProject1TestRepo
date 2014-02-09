@@ -1,0 +1,13 @@
+<html>
+ <head><title>Alieo Test Site</title></head>
+ <body>
+   <h1>Alieogames Django Test with Database</h1>
+{% for post in posts %}
+<h1>{{ post.title }}</h1>   
+<em> <time datetime="{{ post.date.isoformat }}">
+{{ post.date}}</time> <br/>
+</em> 
+<p>{{ post.body }}</p>
+ {% endfor %} 
+ </body>
+</html>
